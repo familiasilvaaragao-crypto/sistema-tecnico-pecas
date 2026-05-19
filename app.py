@@ -27,220 +27,43 @@ st.set_page_config(
 )
 
 st.markdown("""
-<style>
+   <style>
 
-/* FUNDO PRINCIPAL */
-
-.stApp {
-    background: #f1f6ff;
-    color: #0f172a;
+ .stApp {
+    background: #050b18 !important;
+    color: white !important;
 }
 
-/* ESPAÇAMENTO */
-
-.block-container {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-/* SIDEBAR */
+html, body, [class*="css"] {
+    color: white !important;
+ }
 
 section[data-testid="stSidebar"] {
     background: linear-gradient(
         180deg,
-        #003b9f 0%,
-        #002b75 45%,
-        #001b4f 100%
-    );
-
-    border-right: 1px solid #dbeafe;
-}
-
-/* TEXTO SIDEBAR */
-
-section[data-testid="stSidebar"] * {
-    color: white !important;
-}
-
-/* RADIO MENU */
-
-div[role="radiogroup"] label {
-    background: rgba(255,255,255,0.06);
-    border-radius: 12px;
-    padding: 12px;
-    margin-bottom: 8px;
-    transition: 0.2s;
-}
-
-div[role="radiogroup"] label:hover {
-    background: rgba(255,255,255,0.14);
-    transform: translateX(3px);
-}
-
-/* HEADER */
-
-.header-box {
-    background: linear-gradient(
-        135deg,
-        #0057d9,
-        #003b9f
-    );
-
-    padding: 28px;
-    border-radius: 24px;
-
-    box-shadow:
-        0 12px 35px rgba(0,0,0,0.18);
-
-    margin-bottom: 22px;
-}
-
-/* TITULOS */
-
-h1 {
-    color: white !important;
-    font-size: 2.7rem !important;
-    font-weight: 900 !important;
-    margin-bottom: 0px !important;
-}
-
-h2, h3, h4, h5 {
-    color: #0f172a !important;
-    font-weight: 800 !important;
-}
-
-/* SUBTEXTO */
-
-.header-sub {
-    color: #dbeafe;
-    font-size: 1rem;
-    margin-top: -6px;
-}
-
-/* METRICAS */
+        #050b18 0%,
+        #081225 100%
+    ) !important;
+ }
 
 div[data-testid="metric-container"] {
-
-    background: white;
-
-    border:
-        1px solid #dbeafe;
-
-    border-radius: 22px;
-
-    padding: 22px;
-
-    box-shadow:
-        0 8px 24px rgba(15,23,42,0.07);
-
-    transition: 0.2s;
-}
-
-div[data-testid="metric-container"]:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 28px rgba(15,23,42,0.12);
-}
-
-/* NUMERO METRICA */
-
-div[data-testid="metric-container"] [data-testid="stMetricValue"] {
-
-    color: #0057d9 !important;
-
-    font-weight: 900;
-
-    font-size: 2rem;
-}
-
-/* BOTAO */
+    background: rgba(15,23,42,0.85) !important;
+    border: 1px solid rgba(59,130,246,0.18);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+ }
 
 .stButton > button {
-
-    background:
-        linear-gradient(
-            135deg,
-            #0057d9,
-            #003b9f
-        );
-
-    color: white;
-
-    border: none;
-
-    border-radius: 14px;
-
-    padding: 0.65rem 1.4rem;
-
-    font-weight: 800;
-
-    transition: 0.2s;
-}
-
-.stButton > button:hover {
-
-    background:
-        linear-gradient(
-            135deg,
-            #006eff,
-            #0057d9
-        );
-
-    transform: scale(1.02);
-}
-
-/* DATAFRAME */
+    background: linear-gradient(135deg, #0057ff, #0b63ff) !important;
+    color: white !important;
+    border: none !important;
+ }
 
 [data-testid="stDataFrame"] {
-
-    background: white;
-
-    border-radius: 20px;
-
-    border: 1px solid #dbeafe;
-
-    padding: 10px;
-
-    box-shadow:
-        0 8px 24px rgba(15,23,42,0.05);
-}
-
-/* INPUTS */
-
-input, textarea {
-
-    border-radius: 12px !important;
-}
-
-/* SELECT */
-
-div[data-baseweb="select"] > div {
-
-    border-radius: 12px !important;
-
-    border-color: #cbd5e1 !important;
-}
-
-/* DIVISORES */
-
-hr {
-    border-color: #dbeafe;
-}
-
-/* ALERTAS */
-
-.stAlert {
-
-    border-radius: 18px;
+    background: #0b1220 !important;
 }
 
 </style>
 """, unsafe_allow_html=True)
-
-
 
 
 if "logado" not in st.session_state:
