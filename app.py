@@ -108,11 +108,7 @@ input {
 }
 
 /* SIDEBAR */
-
-section[data-testid="stSidebar"] {
-    display: none;
-}
-
+            
 </style>
 """, unsafe_allow_html=True)
 
