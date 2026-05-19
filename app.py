@@ -27,39 +27,90 @@ st.set_page_config(
 )
 
 st.markdown("""
-   <style>
+<style>
 
- .stApp {
-    background: #050b18 !important;
-    color: white !important;
+/* MOBILE CONTAINER */
+
+.main .block-container {
+
+    max-width: 430px;
+
+    padding-top: 1rem;
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    margin: auto;
 }
 
-html, body, [class*="css"] {
-    color: white !important;
- }
+/* TITULOS */
 
-section[data-testid="stSidebar"] {
-    background: linear-gradient(
-        180deg,
-        #050b18 0%,
-        #081225 100%
-    ) !important;
- }
+h1 {
+    font-size: 1.6rem !important;
+}
+
+h2 {
+    font-size: 1.2rem !important;
+}
+
+/* CARDS */
 
 div[data-testid="metric-container"] {
-    background: rgba(15,23,42,0.85) !important;
-    border: 1px solid rgba(59,130,246,0.18);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
- }
+
+    border-radius: 22px !important;
+
+    padding: 18px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15,23,42,0.95),
+            rgba(30,41,59,0.95)
+        ) !important;
+
+    border:
+        1px solid rgba(59,130,246,0.18) !important;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35) !important;
+}
+
+/* BOTÕES */
 
 .stButton > button {
-    background: linear-gradient(135deg, #0057ff, #0b63ff) !important;
-    color: white !important;
-    border: none !important;
- }
+
+    width: 100%;
+
+    height: 52px;
+
+    border-radius: 18px !important;
+
+    font-weight: 800 !important;
+
+    font-size: 1rem !important;
+}
+
+/* DATAFRAME */
 
 [data-testid="stDataFrame"] {
-    background: #0b1220 !important;
+
+    border-radius: 20px !important;
+
+    overflow: hidden;
+}
+
+/* INPUTS */
+
+input {
+
+    border-radius: 16px !important;
+}
+
+/* SIDEBAR */
+
+section[data-testid="stSidebar"] {
+    display: none;
 }
 
 </style>
